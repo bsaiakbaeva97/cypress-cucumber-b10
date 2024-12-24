@@ -28,7 +28,9 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   e2e: {
     specPattern: "**/*.feature",
+    env: {
+      tags: "@regression",
+    },
     setupNodeEvents,
   },
 });
-
